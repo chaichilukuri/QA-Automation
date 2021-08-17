@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-17T14:46:32 IST" name="Default suite" finished-at="2021-08-17T14:47:02 IST" duration-ms="30030">
+    <groups>
+    </groups>
+    <test started-at="2021-08-17T14:46:32 IST" name="Default test" finished-at="2021-08-17T14:47:02 IST" duration-ms="30030">
+      <class name="com.crm.tests.CreateAccountTestScript">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.crm.tests.CreateAccountTestScript@48aca48b]" started-at="2021-08-17T14:46:32 IST" name="init" finished-at="2021-08-17T14:46:42 IST" duration-ms="10002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="createAccountWithBillingAddress()[pri:0, instance:com.crm.tests.CreateAccountTestScript@48aca48b]" started-at="2021-08-17T14:46:42 IST" name="createAccountWithBillingAddress" description="it Creates account with valid details" finished-at="2021-08-17T14:46:53 IST" duration-ms="10934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountWithBillingAddress -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.crm.tests.CreateAccountTestScript@48aca48b]" started-at="2021-08-17T14:46:53 IST" name="getResult" finished-at="2021-08-17T14:46:53 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAccountWithBillingAddress status=SUCCESS method=CreateAccountTestScript.createAccountWithBillingAddress()[pri:0, instance:com.crm.tests.CreateAccountTestScript@48aca48b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="editAccountDetails()[pri:1, instance:com.crm.tests.CreateAccountTestScript@48aca48b]" started-at="2021-08-17T14:46:53 IST" name="editAccountDetails" description="Test case to edit the account details" finished-at="2021-08-17T14:46:59 IST" duration-ms="5998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editAccountDetails -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.crm.tests.CreateAccountTestScript@48aca48b]" started-at="2021-08-17T14:46:59 IST" name="getResult" finished-at="2021-08-17T14:46:59 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editAccountDetails status=SUCCESS method=CreateAccountTestScript.editAccountDetails()[pri:1, instance:com.crm.tests.CreateAccountTestScript@48aca48b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.tests.CreateAccountTestScript@48aca48b]" started-at="2021-08-17T14:46:59 IST" name="tearDown" finished-at="2021-08-17T14:47:02 IST" duration-ms="2970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.tests.CreateAccountTestScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

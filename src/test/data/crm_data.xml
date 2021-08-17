@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CrmLoginData>
+	<logindata id="set1">
+		<username>admin</username>
+		<password>admin</password>
+
+		<accountname>vijay</accountname>
+		<website>annapurnamobiles.com</website>
+		<email>vijay.m@gmail.com</email>
+		<phonenumber>8801447888</phonenumber>
+		<billingstreet>kousalya colony</billingstreet>
+		<billingcity>Hyderabad</billingcity>
+		<billingstate>Telangana</billingstate>
+		<billingpostalcode>500090</billingpostalcode>
+		<billingcountry>India</billingcountry>
+		<editname>vijay M</editname>
+		<editphonenumber>8801447999</editphonenumber>
+		<editemail>vijaymuppalla@gmail.com</editemail>
+
+		<opportunityname>vijay c</opportunityname>
+		<opportunityamount>1000</opportunityamount>
+		<opportunitydate>20-02-2020</opportunitydate>
+		<editopportunityprobability>100</editopportunityprobability>
+		<editopportunityname>vijay M</editopportunityname>
+		<editopportunityamount>5000</editopportunityamount>
+
+		<newusername>chay</newusername>
+		<firstname>chaitanya</firstname>
+		<lastname>chilukuri</lastname>
+		<title>QA</title>
+		<newemail>chaitany.c@rrootshell.com</newemail>
+		<newphonenumber>8801934575</newphonenumber>
+		<newpassword>chay</newpassword>
+		<confirmpassword>chay</confirmpassword>
+
+		<validatorname>Vijay M</validatorname>
+		<validatorbstreet>kousalya colony</validatorbstreet>
+		<validatorbcity>Hyderabad</validatorbcity>
+		<validatorbstate>Telangana</validatorbstate>
+		<validatorpcode>500090</validatorpcode>
+		<validatorbcountry>India</validatorbcountry>
+		
+		<validatorsstreet>kousalya colony</validatorsstreet>
+		<validatorscity>Hyderabad</validatorscity>
+		<validatorsstate>Telangana</validatorsstate>
+		<validatorspcode>500090</validatorspcode>
+		<validatorscountry>India</validatorscountry>
+		
+		<invalidusername>prakash</invalidusername>
+		<invalidpassword>prakash</invalidpassword>
+		<invalidname>8651212</invalidname>
+		<invalidphonenum>hjbajh</invalidphonenum>
+		<invalidemail>chai.ch</invalidemail>
+		<invalidwebsite>chaitu</invalidwebsite>
+		
+		<invalidoname>8526983</invalidoname>
+		<invalidoamount>ghbnsdif</invalidoamount>
+		<invalidclosedate>uyjhsdbmn</invalidclosedate>
+	
+	</logindata>
+
+</CrmLoginData>
