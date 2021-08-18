@@ -48,7 +48,7 @@ public class AccountsAddTestScript {
 	}
 	
 	
-
+	//this test case enter the ramdom name
 	@Test(description = "it Creates account with Random Name", priority = 0)
 	public void createAccountWithBillingAddress() throws IllegalArgumentException, InterruptedException {
 
