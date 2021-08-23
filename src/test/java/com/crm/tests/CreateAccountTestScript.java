@@ -2,17 +2,11 @@ package com.crm.tests;
 
 import java.util.List;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.crm.config.BrowserDriver;
 import com.crm.config.PropertyLoader;
@@ -22,9 +16,10 @@ import com.crm.data.LoginData;
 import com.crm.services.AccountService;
 import com.crm.services.HomeService;
 import com.crm.services.LoginService;
+import com.crm.util.BaseListener;
 import com.crm.validators.CreateAccountValidation;
 
-public class CreateAccountTestScript {
+public class CreateAccountTestScript extends BaseListener {
 
 	LoginService loginService = null;
 	HomeService homeService = null;
@@ -60,10 +55,11 @@ public class CreateAccountTestScript {
 
 		BrowserDriver.getCurrentDriver().get(PropertyLoader.getUrl());
 		loginService.loginToApplication(appData.get(0).getUsername(), appData.get(0).getPassword());
+		test = extent.createTest("Functional Test Cases");
 
 	}
 
-	@AfterClass
+	/*@AfterClass
 	public void tearDown() {
 		BrowserDriver.getCurrentDriver().quit();
 		extent.flush();
@@ -83,7 +79,7 @@ public class CreateAccountTestScript {
 					MarkupHelper.createLabel(result.getName() + "Test Case SKIPPED", ExtentColor.ORANGE));
 			elogger.skip(result.getThrowable());
 		}
-	}
+	}*/
 
 	@Test(description = "it Creates account with valid details", priority = 0)
 	public void createAccountWithBillingAddress() throws IllegalArgumentException, InterruptedException {

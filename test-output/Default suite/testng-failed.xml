@@ -5,10 +5,12 @@
     <classes>
       <class name="com.crm.tests.CreateAccountTestScript">
         <methods>
-          <include name="getResult"/>
           <include name="init"/>
+          <include name="setUp"/>
+          <include name="editAccountDetails"/>
+          <include name="getResult"/>
+          <include name="createAccountWithBillingAddress"/>
           <include name="tearDown"/>
-          <include name="deleteAccountDetails"/>
         </methods>
       </class> <!-- com.crm.tests.CreateAccountTestScript -->
     </classes>

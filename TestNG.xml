@@ -4,7 +4,7 @@
 <suite name="Crm Regression suite">
 
 	<listeners>
-		<listener class-name="com.crm.util.BaseListner" />
+		<listener class-name="com.crm.util.BaseListener" />
 	</listeners>
 
 	<test name="Crm Create Account Test" verbose="2">
