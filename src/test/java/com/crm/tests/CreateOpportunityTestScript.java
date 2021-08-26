@@ -5,6 +5,9 @@ import java.util.List;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.crm.config.BrowserDriver;
 import com.crm.config.PropertyLoader;
 import com.crm.data.CrmLoginData;
@@ -13,9 +16,10 @@ import com.crm.data.LoginData;
 import com.crm.services.HomeService;
 import com.crm.services.LoginService;
 import com.crm.services.OpportunityService;
+import com.crm.util.BaseListener;
 import com.crm.validators.CreateOpportunityValidation;
 
-public class CreateOpportunityTestScript {
+public class CreateOpportunityTestScript extends BaseListener {
 	
 	LoginService loginService = null;
 	HomeService homeService = null;
@@ -25,8 +29,19 @@ public class CreateOpportunityTestScript {
 	CrmLoginData crmLoginData = null;
 	List<LoginData> appData = null;
 	
+	static ExtentTest elogger;
+	static ExtentReports extent = new ExtentReports();
+	
 	@BeforeClass
 	public void init() {
+		
+		ExtentHtmlReporter reporter = new ExtentHtmlReporter("Reports//crm-test-result.html");
+
+		extent.setSystemInfo("OS Name", "Windows");
+		extent.setSystemInfo("Enviroment", "QA");
+		reporter.config().setDocumentTitle("Crm automation test report for QA enviroment");
+		extent.attachReporter(reporter);
+		elogger = extent.createTest("Crm automation test cases");
 	
 		loginService = new LoginService();
 		homeService = new HomeService();
@@ -40,6 +55,7 @@ public class CreateOpportunityTestScript {
 		
 		BrowserDriver.getCurrentDriver().get(PropertyLoader.getUrl());
 		loginService.loginToApplication(appData.get(0).getUsername(), appData.get(0).getPassword());
+		test = extent.createTest("Functional Test Cases");
 	}
 		
 		@Test(description = "it creates opportunity with valid details", priority=0)

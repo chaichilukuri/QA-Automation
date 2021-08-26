@@ -106,13 +106,15 @@ public class CreateAccountTestScript extends BaseListener {
 		accountService.editAccountName(appData.get(0).getEditname());
 		accountService.editAccountPhoneNumber(appData.get(0).getEditphonenumber());
 		accountService.editAccountEmail(appData.get(0).getEditemail()).saveEditedDetails();
+		
 
 	}
 
-//	@Test(description = "Test case to validate Account details", priority = 2)
+	@Test(description = "Test case to validate Account details", priority = 2)
 	public void validateAccountDetails() {
 		homeService.clickOnAccounts();
 		accountValidation.validateAccountName(accountService);
+		accountService.deleteCreatedAccount();
 
 	}
 
