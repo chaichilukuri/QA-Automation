@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.crm.config.BrowserDriver;
 import com.crm.services.AccountService;
+import com.crm.services.EmailService;
 import com.crm.services.HomeService;
 import com.crm.services.LoginService;
 import com.crm.services.OpportunityService;
@@ -21,6 +22,7 @@ public class InitializeViews {
 		AccountService.init();
 		UserService.init();
 		OpportunityService.init();
+		EmailService.init();
 		
 		
 	}

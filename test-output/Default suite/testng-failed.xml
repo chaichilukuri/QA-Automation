@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.tests.CreateAccountTestScript">
+      <class name="com.crm.tests.ComposeEmailTest">
         <methods>
-          <include name="validateAccountDetails"/>
           <include name="init"/>
           <include name="setUp"/>
           <include name="getResult"/>
+          <include name="emailSikuliTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crm.tests.CreateAccountTestScript -->
+      </class> <!-- com.crm.tests.ComposeEmailTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

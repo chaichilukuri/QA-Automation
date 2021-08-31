@@ -6,18 +6,15 @@
   </listeners>
   <test thread-count="5" name="Crm Create Account Test(failed)">
     <classes>
-      <class name="com.crm.tests.CreateOpportunityTestScript">
+      <class name="com.crm.tests.ComposeEmailTest">
         <methods>
           <include name="init"/>
           <include name="setUp"/>
           <include name="getResult"/>
-          <include name="deleteOpportunity"/>
-          <include name="validateOpportunityDetails"/>
-          <include name="createOpportunityWithValidDetails"/>
-          <include name="editOpportunityWithValidDetails"/>
+          <include name="emailSikuliTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crm.tests.CreateOpportunityTestScript -->
+      </class> <!-- com.crm.tests.ComposeEmailTest -->
     </classes>
   </test> <!-- Crm Create Account Test(failed) -->
 </suite> <!-- Failed suite [Crm Regression suite] -->
